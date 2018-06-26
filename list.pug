@@ -1,0 +1,22 @@
+html
+  head
+    title='List'
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+  body
+    h3='Inventory list'
+    a(href='/add' class='btn btn-info') Add new inventory
+    table
+      tr
+        th='ID'
+        th='Title'
+        th='Responsive person'
+        th='Action(delete)'
+      each i in inv_list
+        tr
+          td= i.id
+          td= i.title
+          td= i.resp_person
+          td
+            form(name='delete-item'+i.id action='/delete' method='POST')
+               input(type='hidden' name='delid' value=i.id)
+               input(type='submit' name='delete_btn' value='x' class='btn btn-danger')

@@ -1,0 +1,18 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "latest",
+    "express-session": "latest",
+    "passport": "latest",
+    "passport-local": "latest",
+    "body-parser": "latest",
+    "sqlite3": "latest",
+    "pug": "latest"
+  }
+}
